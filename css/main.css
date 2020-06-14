@@ -16,6 +16,7 @@ ul {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
@@ -47,7 +48,28 @@ body {
 
 /* Список навигационных ссылок в хедере */
 
+.container.header {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav.list {
+  margin-left: 85px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav-link {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -61,7 +83,22 @@ body {
   color: var(--accent-color);
 }
 
+.contacts {
+  display: flex;
+}
+
+.contacts.list {
+  margin-left: auto;
+}
+
+.contacts .item + .item {
+  margin-left: 30px;
+}
+
 .contacts-link {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -113,6 +150,18 @@ body {
 
 /* Преимущества */
 
+.advantages.list {
+  display: flex;
+}
+
+.advantages .item {
+  width: 270px;
+}
+
+.advantages .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -135,6 +184,14 @@ body {
 }
 
 /* Чем мы занимаемся */
+
+.projects.list {
+  display: flex;
+}
+
+.projects .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .section-title {
   font-weight: 700;
@@ -163,6 +220,14 @@ body {
 
 /* Наша команда */
 
+.team.list {
+  display: flex;
+}
+
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .developers {
   font-weight: 500;
   font-size: 16px;
@@ -186,6 +251,20 @@ body {
 .team-img {
   display: block;
   margin-bottom: 30px;
+}
+
+/* Постоянные клиенты */
+
+.regular-clients {
+  display: flex;
+}
+
+.client {
+  display: block;
+  width: 170px;
+  height: 90px;
+  border: 1px solid grey;
+  border-radius: 4px;
 }
 
 /* Футер */
@@ -222,10 +301,18 @@ body {
   text-align: center;
   color: rgba(255, 255, 255, 0.4);
   background: #000;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* СТРАНИЦА ПОРТФОЛИО */
 /* Кнопки */
+
+.invisible-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .btn-filter {
   font-weight: 500;
@@ -241,26 +328,44 @@ body {
   background-color: var(--accent-color);
 }
 
+.container.btn {
+  margin-bottom: 50px;
+}
+
 /* Список примеров работ */
 
-.exemple-title {
+.portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
-.exemple-classifier {
+.portfolio-classifier {
   font-size: 16px;
   line-height: 1.87;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.exemple-description {
+.portfolio-description {
   font-size: 18px;
   line-height: 1.56;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.portfolio-img {
+  display: block;
+  margin-bottom: 20px;
 }
 
 /* Позиционирование */
