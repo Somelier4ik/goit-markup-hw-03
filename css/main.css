@@ -14,6 +14,8 @@
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 a {
@@ -76,28 +78,45 @@ body {
 /* Герой */
 
 .hero {
+  text-align: center;
+}
+
+.hero-title {
   font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
   background: #000;
+
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
+
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+
+  display: inline-block;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
 /* Преимущества */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .advantages-title {
   font-weight: 700;
@@ -105,6 +124,14 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.advantages p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* Чем мы занимаемся */
@@ -115,6 +142,9 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 .projects-title {
@@ -127,6 +157,10 @@ body {
   background: #000;
 }
 
+.section.projects {
+  padding-top: 0;
+}
+
 /* Наша команда */
 
 .developers {
@@ -135,12 +169,23 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--title-text-color);
+
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .profession {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.team-img {
+  display: block;
+  margin-bottom: 30px;
 }
 
 /* Футер */
@@ -216,4 +261,16 @@ body {
   line-height: 1.56;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+/* Позиционирование */
+
+.container {
+  outline: 1px solid red;
+
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
