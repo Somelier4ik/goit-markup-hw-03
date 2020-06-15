@@ -96,9 +96,9 @@ body {
 }
 
 .contacts-link {
-  display: block;
+  /* display: block;
   padding-bottom: 32px;
-  padding-top: 32px;
+  padding-top: 32px; */
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -245,7 +245,7 @@ body {
   text-align: center;
 
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 
 .team-img {
@@ -257,6 +257,7 @@ body {
 
 .regular-clients {
   display: flex;
+  justify-content: space-between;
 }
 
 .client {
@@ -269,8 +270,20 @@ body {
 
 /* Футер */
 
+.container.footer {
+  display: flex;
+}
+
+.social-netwroks-container {
+  margin-left: 69px;
+}
+
 .address-block {
   font-style: normal;
+}
+
+.social-netwroks.list {
+  display: flex;
 }
 
 .address {
@@ -281,6 +294,9 @@ body {
 }
 
 .footer-contacts {
+  /* padding-bottom: 0;
+  padding-top: 0; */
+
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   background: #000;
